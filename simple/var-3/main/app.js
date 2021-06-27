@@ -4,9 +4,9 @@ const path = require('path');
 const data = require('./data.json')
 
 const app = express();
-app.get('/data', (req, res) => {
-    res.json(data)
-})
+// app.get('/data', (req, res) => {
+//     res.json(data)
+// })
 
 
 app.use(cors());

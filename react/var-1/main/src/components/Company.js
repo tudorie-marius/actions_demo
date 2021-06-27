@@ -15,15 +15,15 @@ class Company extends Component {
         [evt.target.name]: evt.target.value
       })
     }
-    this.save = () => {
-      console.log(item.id)
-      this.props.onSave(item.id, {
-        name: this.state.name,
-        employees: this.state.employees,
-        revenue: this.state.revenue
-      })
-      this.setState({ isEditing: false })
-    }
+    // this.save = () => {
+    //   console.log(item.id)
+    //   this.props.onSave(item.id, {
+    //     name: this.state.name,
+    //     employees: this.state.employees,
+    //     revenue: this.state.revenue
+    //   })
+    //   this.setState({ isEditing: false })
+    // }
   }
   render() {
     let { item } = this.props
